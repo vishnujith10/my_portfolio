@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
-import userIcon from '../../assets/user_icon.svg'
+import githubIcon from '../../assets/github_icon.svg'
+import linkedinIcon from '../../assets/linkedin_icon.svg'
 
 const Footer = () => {
   return (
@@ -13,12 +14,14 @@ const Footer = () => {
 
             </div>
             <div className="footertop_right">
-                <div className="footer_email_input">
-                    <img src={userIcon} alt="" />
-                    <input type="email" placeholder='Enter your email' />
-
-                </div>
-                <div className="footer_subscribe">Subscribe</div>
+                <a href="https://github.com/vishnujith10" target="_blank" rel="noopener noreferrer" className="footer_social_link">
+                    <img src={githubIcon} alt="GitHub" />
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vishnujith-n-b-0a6863261/" target="_blank" rel="noopener noreferrer" className="footer_social_link">
+                    <img src={linkedinIcon} alt="LinkedIn" />
+                    <span>LinkedIn</span>
+                </a>
             </div>
         </div>
         <hr />
