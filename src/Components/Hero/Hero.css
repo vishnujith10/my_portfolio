@@ -1,0 +1,245 @@
+.hero{
+    padding: 80px 10%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+/* Diagonal background elements */
+.hero::before,
+.hero::after,
+.hero .diagonal-bg {
+    content: '';
+    position: absolute;
+    background: linear-gradient(135deg, var(--accent-light) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border-radius: 100px;
+    z-index: 0;
+}
+
+.hero::before {
+    width: 500px;
+    height: 500px;
+    top: -200px;
+    right: -100px;
+    transform: rotate(-15deg);
+    opacity: 0.7;
+}
+
+.hero::after {
+    width: 450px;
+    height: 450px;
+    bottom: -150px;
+    left: -100px;
+    transform: rotate(15deg);
+    opacity: 0.5;
+}
+
+.hero .diagonal-bg {
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    opacity: 0.4;
+}
+
+.hero h1{
+    text-align: left;
+    max-width: 600px;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+.hero p{
+    text-align: left;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 span{
+    background: linear-gradient(270deg, #2563EB 10%, #3B82F6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.hero_action{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 64px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero_connect{
+    padding: 12px 24px;
+    border-radius: 6px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.hero_resume{
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    background: var(--light-gray);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hero_connect:hover{
+    color: white;
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.hero_resume:hover{
+    background: var(--accent-light);
+    transform: translateY(-1px);
+}
+
+/* Client logos section */
+.client_logos {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.client_logos img {
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    filter: grayscale(100%);
+}
+
+.client_logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.recent_clients {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    margin-top: 64px;
+}
+
+/* Work buttons */
+.work_buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.view_button {
+    padding: 8px 20px;
+    border-radius: 6px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.source_button {
+    padding: 8px 20px;
+    border-radius: 6px;
+    background: var(--accent-light);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.view_button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.source_button:hover {
+    background: #e4defe;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .hero::before,
+.hero::after,
+.hero .diagonal-bg{
+    display: none;
+}
+    .hero {
+        padding: 60px 24px;
+        align-items: center;
+    }
+    
+    .hero h1 {
+        font-size: 40px;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero p {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero_action {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero_connect,
+    .hero_resume {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .client_logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+    
+    .recent_clients {
+        text-align: center;
+        margin-top: 48px;
+    }
+}

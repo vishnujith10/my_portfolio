@@ -1,0 +1,112 @@
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Common shape styles */
+.shape {
+    position: absolute;
+    background: linear-gradient(135deg, var(--accent-light) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border-radius: 100px;
+}
+
+/* Hero section shapes */
+.hero .shape-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    right: -100px;
+    transform: rotate(-15deg);
+    opacity: 0.7;
+}
+
+.hero .shape-2 {
+    width: 500px;
+    height: 500px;
+    bottom: -200px;
+    left: -100px;
+    transform: rotate(15deg);
+    opacity: 0.5;
+}
+
+/* About section shapes - continuing from Hero */
+.about .shape-1 {
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: 30%;
+    transform: rotate(25deg);
+    opacity: 0.4;
+}
+
+.about .shape-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    right: -100px;
+    transform: rotate(-20deg);
+    opacity: 0.3;
+}
+
+/* Services section shapes - continuing from About */
+.services .shape-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    left: -200px;
+    transform: rotate(15deg);
+    opacity: 0.4;
+}
+
+.services .shape-2 {
+    width: 450px;
+    height: 450px;
+    bottom: -100px;
+    right: 10%;
+    transform: rotate(-25deg);
+    opacity: 0.3;
+}
+
+/* MyWork section shapes - continuing from Services */
+.mywork .shape-1 {
+    width: 550px;
+    height: 550px;
+    top: -150px;
+    right: -150px;
+    transform: rotate(-20deg);
+    opacity: 0.4;
+}
+
+.mywork .shape-2 {
+    width: 500px;
+    height: 500px;
+    bottom: -200px;
+    left: 5%;
+    transform: rotate(20deg);
+    opacity: 0.3;
+}
+
+/* Contact section shapes - continuing from MyWork */
+.contact .shape-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    left: -100px;
+    transform: rotate(25deg);
+    opacity: 0.4;
+}
+
+.contact .shape-2 {
+    width: 450px;
+    height: 450px;
+    bottom: -150px;
+    right: -100px;
+    transform: rotate(-15deg);
+    opacity: 0.3;
+} 

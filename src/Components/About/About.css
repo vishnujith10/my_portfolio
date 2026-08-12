@@ -1,0 +1,233 @@
+.about-container {
+    padding: 60px 8%;
+    color: var(--text-color, #fff);
+    background-color: var(--bg-color, transparent);
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(264deg, #38126D -5.09%, #B415FF 106.28%);
+    border-radius: 2px;
+  }
+  
+  .about-subtitle {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Original achievement style from your first code */
+  .about-achievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(138, 92, 246, 0.096);
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+  
+  .about-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.5s;
+  }
+  
+  .about-achievement h1 {
+    font-size: 36px;
+    font-weight: 700;
+    background: var(--primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+  
+  .about-achievement p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .about-achievement:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+  }
+  
+  .about-achievements hr {
+    height: 40px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    margin: 0;
+  }
+  
+  .about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about-bio p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #B415FF;
+    font-weight: 600;
+  }
+ 
+  .skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .skills-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(264deg, #38126D -5.09%, #B415FF 106.28%);
+    border-radius: 2px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border-left: 2px solid rgba(180, 21, 255, 0.3);
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    border-left: 2px solid #B415FF;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(264deg, #38126dc2 -5.09%, #b515ff8a 106.28%);
+    border-radius: 4px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .profile-card {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 50px 6%;
+    }
+    
+    .about-title {
+      font-size: 2.5rem;
+    }
+    
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-achievements {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .about-achievements hr {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 40px 4%;
+    }
+    
+    .about-title {
+      font-size: 2rem;
+    }
+    
+    .about-bio p {
+      font-size: 1rem;
+    }
+  }
