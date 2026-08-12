@@ -2,7 +2,6 @@ import React from 'react'
 import './MyWork.css'
 import '../shared/Background.css'
 import mywork_data from '../../assets/mywork_data'
-// import arrowIcon from '../../assets/arrow_icon.svg'
 
 const MyWork = () => {
   return (
@@ -15,13 +14,20 @@ const MyWork = () => {
         {mywork_data.map((work, index) => {
           return (
             <div key={index} className="work_item">
-              <img src={work.w_img} alt={work.w_title || "Project image"} />
-              <div className="work_content">
-                <p className="work_description">{work.w_desc}</p>
-                <div className="work_buttons">
-                  <a href={work.demo_link} className="view_button" target="_blank" rel="noopener noreferrer">View</a>
-                  <a href={work.code_link} className="source_button" target="_blank" rel="noopener noreferrer">Source Code</a>
+              <div className="work_image_wrapper">
+                <img src={work.w_img} alt={work.w_name || "Project image"} />
+                <div className="work_overlay">
+                  {work.demo_link && (
+                    <a href={work.demo_link} className="view_button" target="_blank" rel="noopener noreferrer">View</a>
+                  )}
                 </div>
+              </div>
+              <div className="work_info">
+                <h3 className="work_name">{work.w_name}</h3>
+                <p className="work_description">{work.w_desc}</p>
+                {work.code_link && (
+                  <a href={work.code_link} className="source_button" target="_blank" rel="noopener noreferrer">Source Code</a>
+                )}
               </div>
             </div>
           )

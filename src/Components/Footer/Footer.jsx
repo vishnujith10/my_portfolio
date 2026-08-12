@@ -1,17 +1,15 @@
 import React from 'react'
 import './Footer.css'
 import userIcon from '../../assets/user_icon.svg'
+
 const Footer = () => {
   return (
     <div className='footer'>
         <div className="footer_top">
             <div className="footertop_left">
             <div className="navbar_logo_main">
-        {/* <div className="animated_card">
-            <span className="nav_logo">Sebin</span>
-        </div>   */}
     </div>
-                <p>Newly minted IT professional, eager to translate academic insights into dynamic tech solutions. Seeking opportunities to grow within an innovative organization that values fresh perspectives on technology challenges. Passionate about diving deep into technology, discovering new tools, and methodologies.</p>
+                <p>React Native and full-stack developer building AI-integrated mobile and web products. Currently open to freelance work and full-time roles — always exploring new tools and approaches to ship better products.</p>
 
             </div>
             <div className="footertop_right">
@@ -25,7 +23,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="footer_bottom">
-            <p>© 2025 Vishnujith N B. All rights reserved.</p>
+            <p>© 2026 Vishnujith N B. All rights reserved.</p>
         </div>
 
     </div>

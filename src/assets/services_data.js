@@ -1,34 +1,24 @@
 const Services_Data = [
     {
         s_no:"01",
-        s_name:"Web design",
-        s_desc:"Web development is the process of building, programming..."
+        s_name:"React Native App Development",
+        s_desc:"End-to-end mobile app development — from UI design to backend integration. I build cross-platform apps with real-time data, authentication, and AI-powered features."
     },
     {
         s_no:"02",
-        s_name:"Graphics design",
-        s_desc:"Web development is the process of building, programming..."
+        s_name:"Full-Stack Web Development",
+        s_desc:"Production-ready web applications using Next.js, TypeScript, and Supabase. I handle everything from database schema to a polished, deployed frontend."
     },
     {
         s_no:"03",
-        s_name:"Social media",
-        s_desc:"Web development is the process of building, programming..."
+        s_name:"AI Feature Integration",
+        s_desc:"Adding AI capabilities to existing products — from API integration (Gemini, OpenAI) to building features like content analysis, recommendations, and automation."
     },
     {
         s_no:"04",
-        s_name:"App design",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"05",
-        s_name:"Digital marketing",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"06",
-        s_name:"Content writing",
-        s_desc:"Web development is the process of building, programming..."
+        s_name:"E-commerce Solutions",
+        s_desc:"Custom online stores built around how a business actually sells — including direct ordering flows like WhatsApp integration, not just generic checkout templates."
     },
 ]
- 
+
 export default Services_Data;
