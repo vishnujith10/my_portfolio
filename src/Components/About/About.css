@@ -31,7 +31,7 @@
   
   .about-subtitle {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--secondary-color);
     font-weight: 500;
     margin-top: 5px;
   }
@@ -52,8 +52,9 @@
   .profile-image {
     width: 100%;
     max-width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(139, 92, 246, 0.15);
     transition: transform 0.3s ease;
   }
   
@@ -67,9 +68,11 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background: rgba(138, 92, 246, 0.096);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
     padding: 20px 10px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   }
   
   .about-achievement {
@@ -83,7 +86,7 @@
   .about-achievement h1 {
     font-size: 36px;
     font-weight: 700;
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -94,6 +97,7 @@
     font-size: 14px;
     font-weight: 500;
     text-align: center;
+    color: var(--secondary-color);
     margin: 0;
   }
   
@@ -105,7 +109,7 @@
   .about-achievements hr {
     height: 40px;
     width: 1px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--border-color);
     border: none;
     margin: 0;
   }
@@ -119,11 +123,12 @@
   .about-bio p {
     font-size: 1.1rem;
     line-height: 1.7;
+    color: var(--secondary-color);
     margin-bottom: 20px;
   }
   
   .highlight {
-    color: #B415FF;
+    color: var(--primary-color);
     font-weight: 600;
   }
  
@@ -132,6 +137,7 @@
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
+    color: var(--text-color);
   }
   
   .skills-title::after {
@@ -141,7 +147,7 @@
     left: 0;
     width: 50px;
     height: 3px;
-    background: linear-gradient(264deg, #38126D -5.09%, #B415FF 106.28%);
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     border-radius: 2px;
   }
   
@@ -152,28 +158,31 @@
   }
   
   .skill-card {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--card-bg);
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-    border-left: 2px solid rgba(180, 21, 255, 0.3);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--primary-color);
   }
   
   .skill-card:hover {
     transform: translateY(-5px);
-    border-left: 2px solid #B415FF;
+    border-left: 3px solid var(--accent-color);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.15);
   }
   
   .skill-name {
     font-size: 1rem;
     font-weight: 500;
+    color: var(--text-color);
     margin-bottom: 10px;
   }
   
   .skill-bar {
     height: 8px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--light-gray);
     border-radius: 4px;
     overflow: hidden;
   }

@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  background-color: var(--light-gray);
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
 }
 
 .footer_top {
@@ -16,6 +17,7 @@
 .footertop_left p {
   font-size: 16px;
   max-width: 450px;
+  color: var(--secondary-color);
   padding-top: 10%;
 }
 
@@ -31,22 +33,39 @@
   gap: 10px;
   padding: 12px 20px;
   border-radius: 50px;
-  background: #32323B;
-  color: white;
+  background: var(--light-gray);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
   text-decoration: none;
-  font-family: Outfit;
+  font-family: inherit;
   font-size: 16px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .footer_social_link img {
   width: 20px;
   height: 20px;
+  transition: filter 0.3s ease;
+}
+
+[data-theme="light"] .footer_social_link img {
+  filter: brightness(0.15);
+}
+
+[data-theme="light"] .footer_social_link:hover img {
+  filter: brightness(1) invert(1);
+}
+
+[data-theme="dark"] .footer_social_link img {
+  filter: brightness(1);
 }
 
 .footer_social_link:hover {
   transform: translateY(-2px);
+  background: #8B5CF6;
+  border-color: #8B5CF6;
   color: white;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
 }
 
 .footer_bottom {

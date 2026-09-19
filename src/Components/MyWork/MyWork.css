@@ -85,16 +85,18 @@
         position: relative;
         border-radius: 20px;
         overflow: hidden;
-        background: white;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
 
     .work_item:hover {
         transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(108, 43, 217, 0.1);
+        border-color: rgba(139, 92, 246, 0.3);
+        box-shadow: 0 20px 40px rgba(139, 92, 246, 0.18);
     }
 
     /* Image wrapper with hover overlay */
@@ -104,7 +106,7 @@
         height: 300px;
         overflow: hidden;
         border-radius: 20px 20px 0 0;
-        background: #f8fafc;
+        background: var(--work-wrapper-bg);
     }
 
     .work_image_wrapper img {
@@ -116,7 +118,7 @@
     }
 
     .work_image_wrapper.contain_fit {
-        background: #f8fafc;
+        background: var(--work-wrapper-bg);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -194,18 +196,21 @@
     }
 
     .source_button {
-        background: var(--accent-light);
-        color: var(--primary-color);
+        background: rgba(139, 92, 246, 0.15);
+        color: #C084FC;
+        border: 1px solid rgba(139, 92, 246, 0.25);
     }
 
     .view_button:hover {
         color: #fff;
         background: var(--primary-dark);
         transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
     }
 
     .source_button:hover {
-        background: #e4defe;
+        background: rgba(139, 92, 246, 0.25);
+        color: #E9D5FF;
         transform: translateY(-2px);
     }
 

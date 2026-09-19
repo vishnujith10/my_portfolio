@@ -321,32 +321,43 @@
     align-items: center;
     gap: 15px;
     padding: 15px;
-    border-radius: 8px;
-    background: var(--light-gray);
+    border-radius: 12px;
+    background: var(--card-bg);
     transition: all 0.3s ease;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .contact_info_item:hover {
-    background: #eef2ff;
+    background: var(--light-gray);
+    border-color: rgba(139, 92, 246, 0.3);
     transform: translateY(-2px);
 }
 
 .icon_container {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
-    border-radius: 8px;
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .icon_container img {
     width: 20px;
     height: 20px;
+    transition: filter 0.3s ease;
+}
+
+[data-theme="light"] .icon_container img {
+    filter: brightness(0.15);
+}
+
+[data-theme="dark"] .icon_container img {
+    filter: brightness(1);
 }
 
 .info_content h3 {
@@ -362,11 +373,11 @@
 }
 
 .contact_form {
-    background: white;
+    background: var(--card-bg);
     padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--card-border);
 }
 
 .contact_form h3 {
@@ -401,20 +412,20 @@
 .contact_form input,
 .contact_form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 12px 16px;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1rem;
     color: var(--text-color);
-    background: white;
+    background: var(--input-bg);
     transition: all 0.3s ease;
 }
 
 .contact_form input:focus,
 .contact_form textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    border-color: #8B5CF6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
 
 .button_container {

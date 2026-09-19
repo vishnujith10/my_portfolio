@@ -24,16 +24,16 @@
 }
 .services_format{
     display: flex;
-    background: white;
+    background: var(--card-bg);
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     padding: 30px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .mywork::before,
@@ -109,8 +109,8 @@
 }
 .services_format:hover{
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(37, 99, 235, 0.1);
-    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+    border-color: #8B5CF6;
 }
 @media (max-width: 768px) {
     .services {
