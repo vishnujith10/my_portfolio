@@ -18,7 +18,6 @@ const Services = () => {
                     <h1>{service.s_name}</h1>
                     <p>{service.s_desc}</p>
                     <div className='services_readmore'>
-                        <p>Learn More</p>
                         {/* <img src={arrowIcon} alt="" /> */}
                     </div>
                 </div>

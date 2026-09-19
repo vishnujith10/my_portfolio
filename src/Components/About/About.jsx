@@ -20,7 +20,7 @@ const About = () => {
             
             <div className="about-details">
               <div className="about-bio">
-                <p>Hi there! I am <span className="highlight">Vishnu</span>, a React Native and full-stack developer who builds products end-to-end — from database schema to shipped UI. I recently built <span className="highlight">Kalry</span>, an AI-integrated fitness app, and <span className="highlight">BeGreen</span>, a live D2C e-commerce platform for a microgreens business.</p>
+                <p>Hi there! I am <span className="highlight">Vishnujith N B</span>, a React Native and full-stack developer who builds products end-to-end — from database schema to shipped UI. I recently built <span className="highlight">Kalry</span>, an AI-integrated fitness app, and <span className="highlight">BeGreen</span>, a live D2C e-commerce platform for a microgreens business.</p>
                 <p>As a postgraduate in Computer Applications, I stay closely aligned with modern tooling — React Native, Next.js, Supabase, and AI integration are at the core of how I build today.</p>
               </div>
               
