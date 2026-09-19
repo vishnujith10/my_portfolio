@@ -14,7 +14,7 @@ const MyWork = () => {
         {mywork_data.map((work, index) => {
           return (
             <div key={index} className="work_item">
-              <div className="work_image_wrapper">
+              <div className={`work_image_wrapper ${work.w_fit === 'contain' ? 'contain_fit' : ''}`}>
                 <img src={work.w_img} alt={work.w_name || "Project image"} />
                 <div className="work_overlay">
                   {work.demo_link && (

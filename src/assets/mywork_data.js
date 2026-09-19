@@ -1,15 +1,16 @@
-import project1_img from '../assets/apex.png'
+import project1_img from '../assets/calora-home.png'
 import project2_img from '../assets/begreen.png'
 import project3_img from '../assets/pizza.png'
 
 const mywork_data = [
     {
         w_no:1,
-        w_name:"Kalry",
+        w_name:"Calora",
         w_img:project1_img,
-        w_desc:"AI-Integrated Fitness & Calorie Tracking App",
+        w_desc:"AI-Integrated Calorie Tracking App with hydration, weight, sleep tracking features",
         demo_link:"",
-        code_link:"https://github.com/YOUR_USERNAME/kalry"
+        code_link:"https://github.com/YOUR_USERNAME/kalry",
+        w_fit: "contain"
     },
     {
         w_no:2,
@@ -23,7 +24,7 @@ const mywork_data = [
         w_no:3,
         w_name:"Pizza Delivery",
         w_img:project3_img,
-        w_desc:"A simple mernstack pizza delivery website",
+        w_desc:"A simple pizza delivery website developed using  mernstack.",
         demo_link:"",
         code_link:""
     },

@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import '../shared/Background.css';
-import ProfileImg from '../../assets/profiile-.jpg';
+import ProfileImg from '../../assets/profile-vishnu.png';
 
 const About = () => {
   return (

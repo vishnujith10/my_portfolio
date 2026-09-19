@@ -104,6 +104,7 @@
         height: 300px;
         overflow: hidden;
         border-radius: 20px 20px 0 0;
+        background: #f8fafc;
     }
 
     .work_image_wrapper img {
@@ -112,6 +113,18 @@
         object-fit: cover;
         transition: transform 0.3s ease;
         display: block;
+    }
+
+    .work_image_wrapper.contain_fit {
+        background: #f8fafc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .work_image_wrapper.contain_fit img {
+        object-fit: contain;
+        padding: 12px;
     }
 
     .work_item:hover .work_image_wrapper img {
