@@ -1,4 +1,4 @@
-.services{
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,23 +6,27 @@
     gap: 80px;
     margin: 70px 10%;
 }
-.services_title{
+
+.services_title {
     position: relative;
-}  
-.services_title h1{
+}
+
+.services_title h1 {
     padding: 0 30px;
     font-size: 3rem;
     font-weight: 700;
     color: var(--text-color);
 }
-.services_title img{
+
+.services_title img {
     width: 160px;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.services_format{
+
+.services_format {
     display: flex;
     background: var(--card-bg);
     flex-direction: column;
@@ -75,74 +79,89 @@
     transform: rotate(30deg);
     opacity: 0.6;
 }
-.services_container{
+
+.services_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-bottom: 50px;
 }
-.services_format h3{
+
+.services_format h3 {
     font-size: 22px;
     font-weight: 600;
     color: var(--text-color);
 }
+
 .services_format h1 {
     font-size: 30px;
     font-weight: 800;
     color: var(--primary-color);
 }
-.services_format p{
+
+.services_format p {
     color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.6;
 }
-.services_readmore{
+
+.services_readmore {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
-.services_readmore p{
+
+.services_readmore p {
     color: var(--primary-color);
     font-weight: 500;
     cursor: pointer;
 }
-.services_format:hover{
+
+.services_format:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
     border-color: #8B5CF6;
 }
+
 @media (max-width: 768px) {
     .services {
         align-items: start;
         gap: 70px;
         margin: 20px 6%;
     }
-    .services_title h1{
+
+    .services_title h1 {
         padding: 0;
         font-size: 40px;
     }
-    .services_title img{
+
+    .services_title img {
         width: 100px;
         right: -40px;
     }
-    .services_format{
+
+    .services_format {
         gap: 10px;
         padding: 20px;
     }
-    .services_container{
+
+    .services_container {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-    .services_format h2{
+
+    .services_format h2 {
         font-size: 20px;
     }
-    .services_format p{
+
+    .services_format p {
         font-size: 16px;
         line-height: 26px;
         max-width: 300px;
     }
-    .services_readmore img{
+
+    .services_readmore img {
         width: 20px;
     }
 }

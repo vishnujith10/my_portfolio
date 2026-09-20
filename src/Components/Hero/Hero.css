@@ -1,4 +1,4 @@
-.hero{
+.hero {
     padding: 140px 10% 80px 10%;
     display: flex;
     align-items: flex-start;
@@ -86,7 +86,7 @@
     box-shadow: 0 25px 60px rgba(124, 58, 237, 0.35), 0 0 40px rgba(139, 92, 246, 0.25);
 }
 
-.hero h1{
+.hero h1 {
     text-align: left;
     max-width: 600px;
     font-size: 56px;
@@ -98,7 +98,7 @@
     line-height: 1.2;
 }
 
-.hero p{
+.hero p {
     text-align: left;
     max-width: 500px;
     font-size: 18px;
@@ -109,19 +109,19 @@
     z-index: 1;
 }
 
-.hero h1 span{
+.hero h1 span {
     background: linear-gradient(270deg, var(--primary-color) 10%, var(--accent-color) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.hero_action{
+.hero_action {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -131,7 +131,7 @@ a{
     z-index: 1;
 }
 
-.hero_connect{
+.hero_connect {
     padding: 12px 24px;
     border-radius: 6px;
     background: var(--primary-color);
@@ -142,7 +142,7 @@ a{
     box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
 }
 
-.hero_resume{
+.hero_resume {
     padding: 12px 24px;
     border-radius: 6px;
     background: var(--light-gray);
@@ -153,14 +153,14 @@ a{
     cursor: pointer;
 }
 
-.hero_connect:hover{
+.hero_connect:hover {
     color: white;
     background: var(--primary-dark);
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
     transform: translateY(-1px);
 }
 
-.hero_resume:hover{
+.hero_resume:hover {
     background: var(--accent-light);
     transform: translateY(-1px);
 }
@@ -241,13 +241,14 @@ a{
         flex-direction: column;
         gap: 32px;
     }
-    
+
     .hero_left {
         align-items: center;
         width: 100%;
     }
-    
-    .hero h1, .hero p {
+
+    .hero h1,
+    .hero p {
         text-align: center;
     }
 
@@ -257,45 +258,47 @@ a{
 }
 
 @media (max-width: 768px) {
+
     .hero::before,
     .hero::after,
-    .hero .diagonal-bg{
+    .hero .diagonal-bg {
         display: none;
     }
+
     .hero {
         padding: 110px 24px 60px 24px;
         align-items: center;
     }
-    
+
     .hero h1 {
         font-size: 40px;
         text-align: center;
         max-width: 100%;
     }
-    
+
     .hero p {
         text-align: center;
         max-width: 100%;
     }
-    
+
     .hero_action {
         flex-direction: column;
         width: 100%;
         gap: 12px;
     }
-    
+
     .hero_connect,
     .hero_resume {
         width: 100%;
         text-align: center;
     }
-    
+
     .client_logos {
         flex-wrap: wrap;
         justify-content: center;
         gap: 32px;
     }
-    
+
     .recent_clients {
         text-align: center;
         margin-top: 48px;
