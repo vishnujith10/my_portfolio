@@ -69,12 +69,17 @@ const Navbar = () => {
                 </div>
             </div>
             <ul ref={menuRef} className='nav_menu'>
-                <img src={menu_close} onClick={closeMenu} alt="" className="nav_mob_close" />
-                <li><AnchorLink className='anchor_link' href='#home'><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
-                <li><AnchorLink className='anchor_link' offset={50} href='#about'><p onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
-                <li><AnchorLink className='anchor_link' offset={50} href='#services'><p onClick={() => setMenu("services")}>Services</p></AnchorLink></li>
-                <li><AnchorLink className='anchor_link' offset={50} href='#work'><p onClick={() => setMenu("work")}>Works</p></AnchorLink></li>
-                <li><AnchorLink className='anchor_link' offset={50} href='#contact'><p onClick={() => setMenu("contact")}>Contact</p></AnchorLink>{menu === "contact" ? <img src={underline} /> : <></>}</li>
+                <button className="nav_mob_close" onClick={closeMenu} aria-label="Close menu">
+                    <svg width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3216 0.678819C14.6963 1.05359 14.6963 1.66113 14.3216 2.0359L2.10786 14.2521C1.73306 14.627 1.1253 14.627 0.750501 14.2521V14.2521C0.375808 13.8774 0.375807 13.2698 0.750501 12.8951L12.9642 0.678818C13.339 0.303939 13.9468 0.30394 14.3216 0.678819V0.678819Z" fill="currentColor"/>
+                        <path d="M14.2495 14.3212C14.6242 13.9464 14.6242 13.3389 14.2495 12.9641L2.03576 0.747858C1.66096 0.372979 1.0532 0.372981 0.678402 0.74786V0.74786C0.303708 1.12263 0.303708 1.73017 0.678402 2.10494L12.8921 14.3212C13.2669 14.6961 13.8747 14.6961 14.2495 14.3212V14.3212Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <li><AnchorLink className='anchor_link' href='#home'><p onClick={() => { setMenu("home"); closeMenu(); }}>Home</p></AnchorLink></li>
+                <li><AnchorLink className='anchor_link' offset={50} href='#about'><p onClick={() => { setMenu("about"); closeMenu(); }}>About Me</p></AnchorLink></li>
+                <li><AnchorLink className='anchor_link' offset={50} href='#services'><p onClick={() => { setMenu("services"); closeMenu(); }}>Services</p></AnchorLink></li>
+                <li><AnchorLink className='anchor_link' offset={50} href='#work'><p onClick={() => { setMenu("work"); closeMenu(); }}>Works</p></AnchorLink></li>
+                <li><AnchorLink className='anchor_link' offset={50} href='#contact'><p onClick={() => { setMenu("contact"); closeMenu(); }}>Contact</p></AnchorLink>{menu === "contact" ? <img src={underline} alt="" /> : <></>}</li>
             </ul>
             <div className="nav_actions">
                 <button className="theme_toggle_btn" onClick={toggleTheme} title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`} aria-label="Toggle Theme">
@@ -97,7 +102,15 @@ const Navbar = () => {
                     )}
                 </button>
                 <div className="nav_connect"><AnchorLink className='anchor_link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-                {!isMenuOpen && <img ref={menuButtonRef} src={menu_open} onClick={openMenu} alt="Open menu" className='nav_mob_open' />}
+                {!isMenuOpen && (
+                    <button ref={menuButtonRef} onClick={openMenu} className='nav_mob_open' aria-label="Open menu">
+                        <svg width="20" height="16" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="35.9988" height="4" rx="2" fill="currentColor"/>
+                            <rect x="13.0898" y="12.5" width="22.9083" height="4" rx="2" fill="currentColor"/>
+                            <rect x="4.91016" y="25" width="31.0899" height="4" rx="2" fill="currentColor"/>
+                        </svg>
+                    </button>
+                )}
             </div>
         </div>
     )
