@@ -9,7 +9,7 @@ const mywork_data = [
         w_img:project1_img,
         w_desc:"AI-Integrated Calorie Tracking App with hydration, weight, sleep tracking features",
         demo_link:"",
-        code_link:"https://github.com/YOUR_USERNAME/kalry",
+        code_link:"",
         w_fit: "contain"
     },
     {
