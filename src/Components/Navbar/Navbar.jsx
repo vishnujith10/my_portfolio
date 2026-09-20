@@ -48,17 +48,11 @@ const Navbar = () => {
     }, [isMenuOpen]);
 
     const openMenu = () => {
-        if (menuRef.current) {
-            menuRef.current.style.right = "0";
-            setIsMenuOpen(true);
-        }
+        setIsMenuOpen(true);
     }
     
     const closeMenu = () => {
-        if (menuRef.current) {
-            menuRef.current.style.right = "-350px";
-            setIsMenuOpen(false);
-        }
+        setIsMenuOpen(false);
     }
 
     return (
@@ -68,7 +62,7 @@ const Navbar = () => {
                     <span className="nav_logo">Vishnu</span>
                 </div>
             </div>
-            <ul ref={menuRef} className='nav_menu'>
+            <ul ref={menuRef} className={`nav_menu ${isMenuOpen ? 'open' : ''}`}>
                 <button className="nav_mob_close" onClick={closeMenu} aria-label="Close menu">
                     <svg width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.3216 0.678819C14.6963 1.05359 14.6963 1.66113 14.3216 2.0359L2.10786 14.2521C1.73306 14.627 1.1253 14.627 0.750501 14.2521V14.2521C0.375808 13.8774 0.375807 13.2698 0.750501 12.8951L12.9642 0.678818C13.339 0.303939 13.9468 0.30394 14.3216 0.678819V0.678819Z" fill="currentColor"/>

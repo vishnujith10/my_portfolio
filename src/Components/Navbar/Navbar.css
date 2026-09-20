@@ -251,17 +251,27 @@
     .nav_menu {
         position: fixed;
         top: 0;
-        right: -350px;
+        right: 0;
         flex-direction: column;
         background: #0B0F19;
         width: 300px;
+        max-width: 80vw;
         height: 100vh;
         padding: 80px 24px 30px 24px;
-        transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateX(100%);
+        visibility: hidden;
+        pointer-events: none;
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s ease;
         box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
-        z-index: 999;
+        z-index: 1001;
         opacity: 1;
+    }
+
+    .nav_menu.open {
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: auto;
     }
 
     [data-theme="light"] .nav_menu {

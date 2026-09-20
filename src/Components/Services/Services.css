@@ -82,9 +82,10 @@
 
 .services_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .services_format h3 {
@@ -94,9 +95,10 @@
 }
 
 .services_format h1 {
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 700;
     color: var(--primary-color);
+    line-height: 1.3;
 }
 
 .services_format p {
@@ -124,41 +126,55 @@
     border-color: #8B5CF6;
 }
 
+@media (max-width: 1024px) {
+    .services_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
 @media (max-width: 768px) {
     .services {
-        align-items: start;
-        gap: 70px;
-        margin: 20px 6%;
+        align-items: center;
+        gap: 40px;
+        margin: 40px auto;
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .services_title h1 {
         padding: 0;
-        font-size: 40px;
+        font-size: 36px;
+        text-align: center;
     }
 
     .services_title img {
         width: 100px;
-        right: -40px;
+        right: 0;
     }
 
     .services_format {
-        gap: 10px;
-        padding: 20px;
+        gap: 12px;
+        padding: 24px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .services_container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
+        width: 100%;
     }
 
-    .services_format h2 {
-        font-size: 20px;
+    .services_format h1 {
+        font-size: 22px;
     }
 
     .services_format p {
-        font-size: 16px;
-        line-height: 26px;
-        max-width: 300px;
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 100%;
     }
 
     .services_readmore img {
