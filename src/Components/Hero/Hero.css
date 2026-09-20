@@ -133,7 +133,7 @@ a {
 
 .hero_connect {
     padding: 12px 24px;
-    border-radius: 6px;
+    border-radius: 13px;
     background: var(--primary-color);
     color: white;
     cursor: pointer;
@@ -144,7 +144,7 @@ a {
 
 .hero_resume {
     padding: 12px 24px;
-    border-radius: 6px;
+    border-radius: 13px;
     background: var(--light-gray);
     color: var(--text-color);
     transition: all 0.2s ease;

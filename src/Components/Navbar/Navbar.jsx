@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className="navbar_logo_main">
                 <div className="animated_card1">
-                    <span className="nav_logo">Vishnu</span>
+                    <span className="nav_logo">Vishnujith N B</span>
                 </div>
             </div>
             <ul ref={menuRef} className={`nav_menu ${isMenuOpen ? 'open' : ''}`}>

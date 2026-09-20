@@ -239,6 +239,7 @@
     text-align: center;
     font-weight: 500;
 }
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .contact-page {
@@ -435,7 +436,7 @@
     color: white;
     padding: 12px 24px;
     border: none;
-    border-radius: 8px;
+    border-radius: 13px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
