@@ -7,7 +7,7 @@ const Services_Data = [
     {
         s_no:"02",
         s_name:"Full-Stack Web Development",
-        s_desc:"Production-ready web applications using Next.js, TypeScript, and Supabase. I handle everything from database schema to a polished, deployed frontend."
+        s_desc:"Production-ready web applications using Mern Stack, Next.js, TypeScript, and Supabase. I handle everything from database schema to a polished, deployed frontend."
     },
     {
         s_no:"03",
@@ -18,6 +18,11 @@ const Services_Data = [
         s_no:"04",
         s_name:"E-commerce Solutions",
         s_desc:"Custom online stores built around how a business actually sells — including direct ordering flows like WhatsApp integration, not just generic checkout templates."
+    },
+    {
+        s_no:"05",
+        s_name:"Database Design & Management",
+        s_desc:"Designing and managing databases with Supabase (PostgreSQL) and MongoDB — schema design, relationships, and queries built to match how the app actually uses the data, not just generic CRUD."
     },
 ]
 
