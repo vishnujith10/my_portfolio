@@ -68,7 +68,6 @@ const Navbar = () => {
                     <span className="nav_logo">Vishnu</span>
                 </div>
             </div>
-            {!isMenuOpen && <img ref={menuButtonRef} src={menu_open} onClick={openMenu} alt="" className='nav_mob_open' />}
             <ul ref={menuRef} className='nav_menu'>
                 <img src={menu_close} onClick={closeMenu} alt="" className="nav_mob_close" />
                 <li><AnchorLink className='anchor_link' href='#home'><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
@@ -98,6 +97,7 @@ const Navbar = () => {
                     )}
                 </button>
                 <div className="nav_connect"><AnchorLink className='anchor_link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
+                {!isMenuOpen && <img ref={menuButtonRef} src={menu_open} onClick={openMenu} alt="Open menu" className='nav_mob_open' />}
             </div>
         </div>
     )
